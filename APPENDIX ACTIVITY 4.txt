@@ -1,0 +1,120 @@
+IX. APPENDIX: ADDITIONAL EXERCISES
+
+==================================
+1. ENGINEERING TEST DATA ORGANIZER
+----------------------------------
+ASSESMENT DATA:
+
+1. Generated Test Data
+[('Agustin_T1', 'TEMPERATURE', 14), ('Agustin_T2', 'VOLTAGE', 21)]
+[('Agustin_T3', 'CURRENT', 25), ('Agustin_T4', 'PRESSURE', 29)]
+[('Agustin_T5', 'SPEED', 36), ('Agustin_T1', 'TEMPERATURE', 14)]
+[('Agustin_T1', 'VOLTAGE', 19), ('Agustin_T2', 'TEMPERATURE', 26)]
+[('Agustin_T3', 'VOLTAGE', 30), ('Agustin_T4', 'TEMPERATURE', 43)]
+
+2. Organized Test Data
+Agustin_T1 {'TEMPERATURE': [14, 14], 'VOLTAGE': [19]}
+Agustin_T2 {'VOLTAGE': [21], 'TEMPERATURE': [26]}
+Agustin_T3 {'CURRENT': [25], 'VOLTAGE': [30]}
+Agustin_T4 {'PRESSURE': [29], 'TEMPERATURE': [43]}
+Agustin_T5 {'SPEED': [36]}
+
+3. Repeated / Distinct Data
+Repeated: {('Agustin_T1', 'TEMPERATURE')}
+Distinct Data: [14, 19, 21, 25, 26, 29, 30, 36, 43]
+
+4. Numerical and Categorical Summaries
+TEMPERATURE: count=4 total=97 avg=24.25 min=14 max=43
+VOLTAGE: count=3 total=70 avg=23.33 min=19 max=30
+CURRENT: count=1 total=25 avg=25.0 min=25 max=25
+PRESSURE: count=1 total=29 avg=29.0 min=29 max=29
+SPEED: count=1 total=36 avg=36.0 min=36 max=36
+
+5. Processed Results
+[(24.25, 'TEMPERATURE'), (23.33, 'VOLTAGE'), (25.0, 'CURRENT'), (29.0, 'PRESSURE'), (36.0, 'SPEED')]
+
+6. Ordered Results
+['SPEED', 'PRESSURE', 'CURRENT', 'TEMPERATURE', 'VOLTAGE']
+
+7. Final Summary
+{'operator': 'Agustin', 'records': 10, 'repeated': 1, 'total': 257, 'average': 25.7, 'max': 43, 'min': 14, 'top_category': 'SPEED'}
+
+
+====================================
+2. STUDENT PERFORMANCE DATA ANALYZER
+------------------------------------
+ASSESMENT DATA:
+
+1. Generated Performance Records
+[('Agustin_S1', 'PROGRAMMING', 83), ('Agustin_S1', 'MATHEMATICS', 86)]
+[('Agustin_S2', 'MATHEMATICS', 74), ('Agustin_S2', 'ELECTRONICS', 62)]
+[('Agustin_S3', 'ELECTRONICS', 65), ('Agustin_S3', 'PHYSICS', 63)]
+[('Agustin_S4', 'PHYSICS', 76), ('Agustin_S4', 'ENGLISH', 84)]
+[('Agustin_S5', 'ENGLISH', 56), ('Agustin_S5', 'PROGRAMMING', 59)]
+[('Agustin_S1', 'PROGRAMMING', 83), ('Agustin_S3', 'ENGLISH', None)]
+
+2. Organized Student/Subject Data
+Agustin_S1 {'PROGRAMMING': [83, 83], 'MATHEMATICS': [86]}
+Agustin_S2 {'MATHEMATICS': [74], 'ELECTRONICS': [62]}
+Agustin_S3 {'ELECTRONICS': [65], 'PHYSICS': [63]}
+Agustin_S4 {'PHYSICS': [76], 'ENGLISH': [84]}
+Agustin_S5 {'ENGLISH': [56], 'PROGRAMMING': [59]}
+
+3. Repeated / Incomplete Records
+Repeated: {('Agustin_S1', 'PROGRAMMING')}
+Incomplete: [('Agustin_S3', 'ENGLISH')]
+
+4. Performance Categories
+[(83, 'VERY GOOD'), (86, 'VERY GOOD'), (74, 'GOOD'), (62, 'FAIR'), (65, 'FAIR'), (63, 'FAIR'), (76, 'GOOD'), (84, 'VERY GOOD'), (56, 'NEEDS IMPROVEMENT'), (59, 'NEEDS IMPROVEMENT'), (83, 'VERY GOOD')]
+[('EXCELLENT', 0), ('VERY GOOD', 4), ('GOOD', 2), ('FAIR', 3), ('NEEDS IMPROVEMENT', 2)]
+
+5. Student and Subject Summaries
+[(84.0, 'Agustin_S1', 3), (68.0, 'Agustin_S2', 2), (64.0, 'Agustin_S3', 2), (80.0, 'Agustin_S4', 2), (57.5, 'Agustin_S5', 2)]
+[(75.0, 'PROGRAMMING', 3), (80.0, 'MATHEMATICS', 2), (63.5, 'ELECTRONICS', 2), (69.5, 'PHYSICS', 2), (70.0, 'ENGLISH', 2)]
+
+6. Ordered Results
+['Agustin_S1', 'Agustin_S4', 'Agustin_S2', 'Agustin_S3', 'Agustin_S5']
+['MATHEMATICS', 'PROGRAMMING', 'ENGLISH', 'PHYSICS', 'ELECTRONICS']
+
+7. Final Summary
+{'operator': 'Agustin', 'records': 12, 'valid': 11, 'incomplete': 1, 'repeated': 1, 'class_avg': 71.91, 'high': 86, 'low': 56, 'top_student': 'Agustin_S1', 'top_subject': 'MATHEMATICS'}
+
+====================================
+3. TRANSACTION HISTORY ANALYZER
+------------------------------------
+ASSESMENT DATA:
+
+1. Generated Transaction Records
+[('Agustin_C1', 'USB', 5), ('Agustin_C2', 'CALCULATOR', 5)]
+[('Agustin_C3', 'PEN', 2), ('Agustin_C4', 'HEADPHONES', 4)]
+[('Agustin_C5', 'NOTEBOOK', 4), ('Agustin_C1', 'USB', 3)]
+[('Agustin_C2', 'CALCULATOR', 5), ('Agustin_C3', 'PEN', 1)]
+[('Agustin_C1', 'USB', 5)]
+
+2. Organized Transaction Data
+Agustin_C1 {'USB': [5, 3, 5]}
+Agustin_C2 {'CALCULATOR': [5, 5]}
+Agustin_C3 {'PEN': [2, 1]}
+Agustin_C4 {'HEADPHONES': [4]}
+Agustin_C5 {'NOTEBOOK': [4]}
+
+3. Repeated / Distinct Transactions
+Repeated: {('Agustin_C1', 'USB'), ('Agustin_C2', 'CALCULATOR'), ('Agustin_C3', 'PEN')}
+Distinct customers: 5 | Distinct products: 5
+
+4. Transaction Values
+[1750, 3250, 24, 3560, 180, 1050, 3250, 12, 1750]
+
+5. Customer Summaries (spent, name, items)
+[(4550, 'Agustin_C1', 13), (6500, 'Agustin_C2', 10), (36, 'Agustin_C3', 3), (3560, 'Agustin_C4', 4), (180, 'Agustin_C5', 4)]
+
+6. Product Summaries (revenue, name, units)
+[(180, 'NOTEBOOK', 4), (36, 'PEN', 3), (4550, 'USB', 13), (3560, 'HEADPHONES', 4), (6500, 'CALCULATOR', 10)]
+
+7. Ordered Results
+['Agustin_C2', 'Agustin_C1', 'Agustin_C4', 'Agustin_C5', 'Agustin_C3']
+['CALCULATOR', 'USB', 'HEADPHONES', 'NOTEBOOK', 'PEN']
+[3560, 3250, 3250, 1750, 1750, 1050, 180, 24, 12]
+
+8. Overall Transaction Summary
+{'operator': 'Agustin', 'transactions': 9, 'items': 34, 'grand_total': 14826, 'average': 1647.33, 'largest': 3560, 'smallest': 12, 'repeated': 3, 'top_customer': 'Agustin_C2', 'top_product': 'CALCULATOR'}
